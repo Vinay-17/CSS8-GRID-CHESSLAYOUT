@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .md{
+            border:2px solid black;
+            height:500px;
+            width:500px;
+        } */
+        .cd{
+            transform: translate(200px);
+            height:100px;
+            width:100px;
+            background-color:aqua;
+
+        }
+        .a1:active~.cd{
+            transform: translate(200px);
+            background-color: red;
+            transform:rotate(120deg);
+        }
+        .cd1{
+            transform: translate(200px);
+            height:100px;
+            width:100px;
+            background-color:indigo ;
+        }
+        /* .cd1:hover{
+            transform: translate(200px);
+            transform: skew(40deg);
+            background-color: aqua; */
+        .a2:active ~ .cd1{
+            transform: perspective(300px) rotatex(60deg);
+            background-color: aqua;
+        }
+        .cd2{
+            transform: translate(200px);
+            height:100px;
+            width:100px;
+            background-color:maroon;
+        }
+        .a3:active~.cd2{
+            transform:perspective(300px) scale(1.5) rotateY(60deg);
+            background-color: green;
+            /* transform:rotate(45deg) */
+        }
+        .cd3{
+            transform:translate(200px);
+            height: 100px;
+            width:100px;
+            background-color: red;
+        }
+        .a4:active~.cd3{
+            transform: perspective(200px) scale(1) skewX(40deg);
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+        <input class="a1" type="radio">
+        <div class="cd"></div><br>
+        <input  class="a2"type="radio">
+        <div class="cd1"></div></div><br>
+        <input class="a3" type="radio">
+        <div class="cd2"></div>
+        <input class="a4"type="radio">
+        <div class="cd3"></div>
+    </div>
+</body>
+</html>
